@@ -1,5 +1,6 @@
 .featurestile-container
 {
+    display:flex;
     width: 1000px;
     margin-left:auto;
     margin-right:auto;
@@ -22,4 +23,9 @@
 {
     height:1800px;
     background-color: blue;
+}
+.featurestile-contents
+{
+    height:600px;
+    width:100%;
 }

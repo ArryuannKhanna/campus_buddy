@@ -11,6 +11,7 @@ function App() {
      <Navbar/>
      <Landingpage/>
      <Fetaurestile/>
+     
      </div>
     </>
   )
