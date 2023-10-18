@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './Navbar/Navbar';
 import Landingpage from './LandingPage/Landingpage';
 import Fetaurestile from './Featurestile/Fetaurestile';
-
+import ReviewSection from './ReviewSection/ReviewSection';
 function App() {
   return (
     <>
@@ -11,7 +11,7 @@ function App() {
      <Navbar/>
      <Landingpage/>
      <Fetaurestile/>
-     
+     <ReviewSection/>
      </div>
     </>
   )

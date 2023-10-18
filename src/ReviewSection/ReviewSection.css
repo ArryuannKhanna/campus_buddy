@@ -1,0 +1,127 @@
+.review-grid {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%; /* Use percentage for margins */
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Margin to reduce the gap between columns */
+}
+
+.header {
+  text-align: center;
+}
+
+.review-box {
+  background-color: #ededed21;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em; /* Converted from 20px to 1.25em */
+  border: 1px solid #ccc;
+  max-width: 22em; /* Use em units */
+  margin: 1.25em;
+  border-radius: 0.6125em;
+  transition: transform 0.4s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.review-box:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.4);
+}
+
+.review-pic {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.review-image img {
+  width: 100%;
+  height: 80%; /* Use percentage for height */
+  object-fit: cover;
+  border-radius: 0.6125em;
+}
+
+.review-details {
+  margin-top: -0.9375em; /* Use em units */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Ensure text wraps within the review box */
+.review-details p {
+  margin: 0.625em 0; /* Use em units */
+  word-wrap: break-word;
+}
+
+.col2 {
+  justify-content: center;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625em; /* Use em units */
+}
+
+.profile-image {
+  width: 3.125em;
+  height: 3.125em;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 0.625em;
+}
+
+.review-author {
+  margin: 0;
+  font-size: 0.96em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.review-details h3 {
+  margin: 0.625em 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.review-details p {
+  margin: 0.625em 0;
+}
+
+@media (max-width: 768px) {
+  .review-grid {
+    flex-wrap: wrap;
+  margin: 0 2%; /* Adjust the margins for smaller screens */
+  }
+
+  /* Style for the first and third columns */
+  .column:nth-child(1),
+  .column:nth-child(2) {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  /* Style for the second column (hidden on tablets) */
+ 
+}
+@media (max-width: 1400px) {
+  .column:nth-child(3) {
+    display: none;
+  }
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 880px) {
+  .review-grid {
+    flex-wrap: wrap;
+    margin: 0 2%;
+  }
+
+}
