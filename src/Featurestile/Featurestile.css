@@ -1,0 +1,25 @@
+.featurestile-container
+{
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    height:1800px;
+    background-color: pink;
+}
+.featurestile-preview,.featurestile-content-container
+{
+    display:inline-block;
+    width:490px;
+    background-color:red;
+}
+.featurestile-preview
+{
+    height:500px;
+    margin-right: 20px;
+}
+.featurestile-content-container
+{
+    height:1800px;
+    background-color: blue;
+}
