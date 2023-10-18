@@ -19,7 +19,7 @@ export const Fadein = ({ children }) => {
       transition:
       {
         duration:0.9,
-        ease:easeOut,
+        ease:easeIn,
       }
     },
   };

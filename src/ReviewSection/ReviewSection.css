@@ -17,11 +17,10 @@
 }
 
 .review-box {
-  background-color: #ededed21;
+  background-color: #f1f1f1d3;
   display: flex;
   flex-direction: column;
   padding: 1.25em; /* Converted from 20px to 1.25em */
-  border: 1px solid #ccc;
   max-width: 22em; /* Use em units */
   margin: 1.25em;
   border-radius: 0.6125em;
