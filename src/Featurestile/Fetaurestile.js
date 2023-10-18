@@ -1,28 +1,83 @@
 import React from 'react'
-import { useEffect,useRef } from 'react'
+import { useEffect,useRef,useState } from 'react'
 import './Featurestile.css'
-import { easeOut, motion, useAnimation, useInView } from 'framer-motion';
+import { easeIn, easeOut, useAnimation, useInView } from 'framer-motion';
+import { motion,useScroll,useTransform } from 'framer-motion'
 
 export const Fetaurestile = () => {
+    const [firststate,changefirststate]=useState(false);
+    const [secondstate,changesecondstate]=useState(false);
+
+
     const ref1 = useRef(null);
     const ref2 = useRef(null);
     const inview = useInView(ref1, {once:false});
     const inview1 = useInView(ref2, {once:false});
     const controls = useAnimation();
     const controls1 = useAnimation();
-    useEffect(() => {
-        if (inview) {
-          controls.start("animate");
-        }
-        
-      }, [inview]);
 
-      useEffect(() => {
-        if (inview1) {
-          controls1.start("animate");
+    const{scrollYProgress:sc}=useScroll({
+        target:ref1,
+        // offset:['0.2 0.6','1.4 0.4']
+    })
+
+    const{scrollYProgress:sc1}=useScroll({
+        target:ref2,
+        // offset:['0.2 0.6','1.4 0.4']
+    })
+
+    
+    useEffect(() => {
+        console.log("this is sc->",sc.current);
+        console.log("this is sc1->",sc1.current);
+        if(sc.current<=0.99)
+        {
+            controls.start("animate");
         }
+        else
+        {
+            controls.start("start");
+        }
+        if(sc1.current<=0.99)
+        {
+            controls1.start("animate");
+        }
+        else
+        {
+            controls1.start("start");
+        }
+      }, [sc.current,sc1.current]);
+
+    //   useEffect(() => {
+    //     console.log("this is sc1->",sc1.current);
+    //     if(sc1.current<=0.9)
+    //     {
+    //         controls1.start("animate");
+    //     }
+    //     if(sc1.current==1)
+    //     {
+    //         controls1.start("start");
+    //     }
+    //   }, [sc1.current]);
+   
+    // if(sc1.current>=0.3)
+    // {
+    //     controls1.start("animate");
+    // }
+
+    // useEffect(() => {
+    //     if (inview) {
+    //       controls.start("animate");
+    //     }
         
-      }, [inview1]);
+    //   }, [inview]);
+
+    //   useEffect(() => {
+    //     if (inview1) {
+    //       controls1.start("animate");
+    //     }
+        
+    //   }, [inview1]);
 
       const variants = {
         animate: {
@@ -32,6 +87,15 @@ export const Fetaurestile = () => {
           {
             duration:0.9,
             ease:easeOut,
+          }
+        },
+        start:{
+          opacity:0.2,
+          y:40,
+          transition:
+          {
+            duration:0.9,
+            ease:easeIn,
           }
         },
     };
@@ -45,6 +109,15 @@ export const Fetaurestile = () => {
             ease:easeOut,
           }
         },
+        start:{
+            opacity:0.2,
+            y:40,
+            transition:
+            {
+              duration:0.9,
+              ease:easeIn,
+            }
+          },
     };
 
   return (
@@ -66,8 +139,8 @@ export const Fetaurestile = () => {
                     <p>After completing your purchase, check your email for the download link. Click it to obtain your iPhone mockup files.</p>
                 </div>
             </div>
-            <div ref={ref1} className="featurestile-contents checkout">
-                <div className="title buy">
+            <div className="featurestile-contents checkout">
+                <div ref={ref1} className="title buy">
                     <h2>Checkout and <span className='purple-colored-span'>Buy/Lease</span></h2>
                 </div>
                 <div className="desc buy">
@@ -77,8 +150,8 @@ export const Fetaurestile = () => {
                     <p>After completing your purchase, check your email for the download link. Click it to obtain your iPhone mockup files.</p>
                 </div>
             </div>
-            <div ref={ref2} className="featurestile-contents review">
-                <div className="title review">
+            <div className="featurestile-contents review">
+                <div ref={ref2} className="title review">
                     <h2>Provide a <span className='purple-colored-span'>Review</span></h2>
                 </div>
                 <div className="desc review">

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { easeIn, easeOut, motion, useAnimation, useInView } from 'framer-motion';
 
+
 export const Fadein = ({ children }) => {
   const ref = useRef(null);
   const inview = useInView(ref, {once: true });
