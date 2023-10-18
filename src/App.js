@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './Navbar /Navbar';
+import Navbar from './Navbar/Navbar';
 import Landingpage from './LandingPage/Landingpage';
 import Fetaurestile from './Featurestile/Fetaurestile';
 
