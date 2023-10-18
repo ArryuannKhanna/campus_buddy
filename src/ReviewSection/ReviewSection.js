@@ -3,6 +3,8 @@ import './ReviewSection.css';
 import reviews from './ReviewData.js';
 import reviewpic from './review.jpeg';
 import userpic from './user.png'
+import Fadein from '../Framer_Components/FadeIn';
+import motion from 'framer-motion'
 export const ReviewSection = () => {
   return (
     <div className='reviewsection'>
@@ -13,8 +15,10 @@ export const ReviewSection = () => {
     <h2>Users</h2>
     </div>
     <div className="review-grid">
-      <div className="column col1">
+  
+    <div className="column col1">
         {reviews.slice(0, 3).map((review, index) => (
+          <Fadein>
           <div key={index} className="review-box">
             {review.reviewPic && (
               <div className="review-image">
@@ -34,11 +38,14 @@ export const ReviewSection = () => {
               </div>
             </div>
           </div>
+          </Fadein>
         ))}
       </div>
+    
+     
       <div className="column col2">
         {reviews.slice(3, 6).map((review, index) => (
-          <div key={index} className="review-box">
+          <Fadein>  <div key={index} className="review-box">
             {review.reviewPic && (
               <div className="review-image">
                 <img
@@ -56,11 +63,14 @@ export const ReviewSection = () => {
                 <p className="review-author">{review.name}</p>
               </div>
             </div>
-          </div>
+          </div></Fadein>
+
+        
         ))}
       </div>
       <div className="column col3">
         {reviews.slice(6, 9).map((review, index) => (
+          <Fadein>
           <div key={index} className="review-box">
             {review.reviewPic && (
               <div className="review-image">
@@ -80,6 +90,7 @@ export const ReviewSection = () => {
               </div>
             </div>
           </div>
+          </Fadein>
         ))}
       </div>
     </div>
