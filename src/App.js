@@ -5,6 +5,7 @@ import Landingpage from './LandingPage/Landingpage';
 import Fetaurestile from './Featurestile/Fetaurestile';
 import Faq from './FAQs/Faq';
 
+import ReviewSection from './ReviewSection/ReviewSection';
 function App() {
   return (
     <>
@@ -13,7 +14,7 @@ function App() {
      <Landingpage/>
      <Fetaurestile/>
      <Faq/>
-     
+     <ReviewSection/>
      </div>
     </>
   )
