@@ -27,7 +27,7 @@ export const Fadein = ({ children }) => {
 
   return (
     <div ref={ref}>
-      <motion.div variants={variants} initial={{opacity:0.2,y:40}} animate={controls}>
+      <motion.div variants={variants} initial={{opacity:0,y:40}} animate={controls}>
         {children}
       </motion.div>
     </div>

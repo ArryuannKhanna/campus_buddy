@@ -18,19 +18,20 @@ export const Fetaurestile = () => {
 
     const{scrollYProgress:sc}=useScroll({
         target:ref1,
-        // offset:['0.2 0.6','1.4 0.4']
+        offset:["1.33 1","0 1"]
     })
 
     const{scrollYProgress:sc1}=useScroll({
         target:ref2,
+        offset:["1.33 1","0 1"]
         // offset:['0.2 0.6','1.4 0.4']
     })
 
     
     useEffect(() => {
-        console.log("this is sc->",sc.current);
-        console.log("this is sc1->",sc1.current);
-        if(sc.current<=0.99)
+        // console.log("this is sc->",sc.current);
+        // console.log("this is sc1->",sc1.current);
+        if(sc.current<1)
         {
             controls.start("animate");
         }
@@ -38,7 +39,7 @@ export const Fetaurestile = () => {
         {
             controls.start("start");
         }
-        if(sc1.current<=0.99)
+        if(sc1.current<1)
         {
             controls1.start("animate");
         }
@@ -48,37 +49,7 @@ export const Fetaurestile = () => {
         }
       }, [sc.current,sc1.current]);
 
-    //   useEffect(() => {
-    //     console.log("this is sc1->",sc1.current);
-    //     if(sc1.current<=0.9)
-    //     {
-    //         controls1.start("animate");
-    //     }
-    //     if(sc1.current==1)
-    //     {
-    //         controls1.start("start");
-    //     }
-    //   }, [sc1.current]);
    
-    // if(sc1.current>=0.3)
-    // {
-    //     controls1.start("animate");
-    // }
-
-    // useEffect(() => {
-    //     if (inview) {
-    //       controls.start("animate");
-    //     }
-        
-    //   }, [inview]);
-
-    //   useEffect(() => {
-    //     if (inview1) {
-    //       controls1.start("animate");
-    //     }
-        
-    //   }, [inview1]);
-
       const variants = {
         animate: {
           opacity:1,
@@ -95,7 +66,7 @@ export const Fetaurestile = () => {
           transition:
           {
             duration:0.9,
-            ease:easeIn,
+            ease:easeOut,
           }
         },
     };
@@ -115,7 +86,7 @@ export const Fetaurestile = () => {
             transition:
             {
               duration:0.9,
-              ease:easeIn,
+              ease:easeOut,
             }
           },
     };
