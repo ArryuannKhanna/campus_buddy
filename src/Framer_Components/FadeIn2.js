@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { easeIn, easeOut, motion, useAnimation, useInView } from 'framer-motion';
 
 
-export const Fadein = ({ children }) => {
+export const Fadein2 = ({ children }) => {
   const ref = useRef(null);
   const inview = useInView(ref, {once: true });
   const controls = useAnimation();
@@ -19,7 +19,7 @@ export const Fadein = ({ children }) => {
       y:[40,20,0],
       transition:
       {
-        duration:2,
+        duration:1.8,
         ease:easeOut,
       }
     },
@@ -34,4 +34,4 @@ export const Fadein = ({ children }) => {
   );
 };
 
-export default Fadein;
+export default Fadein2;
