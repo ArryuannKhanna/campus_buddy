@@ -1,19 +1,14 @@
 import React from 'react';
-import Message from './Message'; // You may need to adjust the import path
+import Message from './Message'; 
 
-function ChatContainer({faqs}) {
+function ChatContainer({ question, answer, userAvatar, botAvatar }) {
   return (
-    <div className="chat-container">
-      <div className="chat">
-        {faqs.map((faq, index) => (
-          <div key={index} className="faq">
-            <Message text={faq.question} sender="user" avatarUrl={faq.userAvatar} />
-            <Message text={faq.answer} sender="bot" avatarUrl={faq.botAvatar} />
-          </div>
-        ))}
-      </div>
+    <div className="faq">
+      <Message text={question} sender="user" avatarUrl={userAvatar} />
+      <Message text={answer} sender="bot" avatarUrl={botAvatar} />
     </div>
   );
 }
+
 
 export default ChatContainer;
