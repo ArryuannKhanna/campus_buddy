@@ -41,11 +41,9 @@ function Chat({ faqs }) {
     <div className="chat-container">
       <div className="chat">
         {faqs.map((faq, index) => (
-          <div ref={ref} key={index} className="faq">
-            <motion.div variants={variants} initial={{opacity:0.2}} animate={controls}>
+          <div key={index} className="faq">
             <Message text={faq.question} sender="user" avatarUrl={faq.userAvatar} />
             <Message text={faq.answer} sender="bot" avatarUrl={faq.botAvatar} />
-            </motion.div>
           </div>
         ))}
       </div>

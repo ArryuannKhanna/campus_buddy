@@ -15,12 +15,12 @@ export const Fadein = ({ children }) => {
 
   const variants = {
     animate: {
-      opacity:1,
-      y:0,
+      opacity:[0,0.2,1.0],
+      y:[40,20,0],
       transition:
       {
-        duration:0.9,
-        ease:easeIn,
+        duration:2,
+        ease:easeOut,
       }
     },
   };

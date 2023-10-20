@@ -61,7 +61,7 @@ export const Fetaurestile = () => {
           }
         },
         start:{
-          opacity:0.2,
+          opacity:0.6,
           y:40,
           transition:
           {
@@ -81,7 +81,7 @@ export const Fetaurestile = () => {
           }
         },
         start:{
-            opacity:0.2,
+            opacity:0.6,
             y:40,
             transition:
             {
@@ -94,9 +94,9 @@ export const Fetaurestile = () => {
   return (
     <motion.div className="featurestile-container">
         <div className="featurestile-preview">
-            <div className="first-preview"></div>
-            <motion.div variants={variants} initial={{opacity:0.2,y:40}} animate={controls} className="second-preview"></motion.div>
-            <motion.div variants={variants1} initial={{opacity:0.2,y:40}} animate={controls1} className="third-preview"></motion.div>
+            <div className="first-preview"><img src={process.env.PUBLIC_URL + '/selling.jpg'} /></div>
+            <motion.div variants={variants} initial={{opacity:0.6,y:40}} animate={controls} className="second-preview"><img src={process.env.PUBLIC_URL + '/buying.jpg'} /></motion.div>
+            <motion.div variants={variants1} initial={{opacity:0.6,y:40}} animate={controls1} className="third-preview"><img src={process.env.PUBLIC_URL + '/reviewing.jpg'} /></motion.div>
         </div>
          <div className="featurestile-content-container">
             <div className="featurestile-contents update">
