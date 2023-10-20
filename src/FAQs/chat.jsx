@@ -1,8 +1,22 @@
-import React,{useEffect,useRef} from 'react';
-import Message from './Message';
+// import React,{useEffect,useRef} from 'react';
+// import Message from './Message';
 // import { motion,useScroll,easeIn, easeOut, useAnimation} from 'framer-motion'
 
-function Chat({ faqs }) {
+// function Chat({ faqs }) {
+import React from 'react';
+import ChatContainer from './ChatContainer';
+import { faqs } from './faqData';
+
+function chat() {
+
+  return (
+    
+      <ChatContainer faqs={faqs} />
+  );
+}
+export default  chat;
+
+
 //   const ref = useRef(null);
 //   const controls = useAnimation();
 //   const{scrollYProgress:sc}=useScroll({
@@ -37,19 +51,22 @@ function Chat({ faqs }) {
 //       }
 //     },
 // };
-  return (
-    <div className="chat-container">
-      <div className="chat">
-        {faqs.map((faq, index) => (
-          <div key={index} className="faq">
-            <Message text={faq.question} sender="user" avatarUrl={faq.userAvatar} />
-            <Message text={faq.answer} sender="bot" avatarUrl={faq.botAvatar} />
-          </div>
-        ))}
-      </div>
-    </div>
-    
-  );
-}
 
-export default Chat;
+  // return (
+  //   <div className="chat-container">
+  //     <div className="chat">
+  //       {faqs.map((faq, index) => (
+  //         <div key={index} className="faq">
+  //           <Message text={faq.question} sender="user" avatarUrl={faq.userAvatar} />
+  //           <Message text={faq.answer} sender="bot" avatarUrl={faq.botAvatar} />
+  //         </div>
+  //       ))}
+  //     </div>
+  //   </div>
+    
+  // );
+
+  
+
+
+// export default Chat;

@@ -4,7 +4,10 @@ import reviews from './ReviewData.js';
 import reviewpic from './review.jpeg';
 import userpic from './user.png'
 import Fadein from '../Framer_Components/FadeIn';
+<<<<<<< HEAD
 import Pullup from '../Framer_Components/Pullup';
+=======
+>>>>>>> 22ea4cf79d282499f1d3d4870e3940aa85378a22
 export const ReviewSection = () => {
   return (
     <div className='reviewsection'>
