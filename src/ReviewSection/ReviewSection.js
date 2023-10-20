@@ -10,8 +10,9 @@ export const ReviewSection = () => {
     <div className='header'>
     <h5>Reviews</h5>
     <h2>Read Real Customer Reviews</h2>
-    <h2>Honest Feedback from Satisfied</h2>
-    <h2>Users</h2>
+    <div className='gray'><h2>Honest Feedback from Satisfied</h2>
+    <h2>Users</h2></div>
+  
     </div>
     <div className="review-grid">
   

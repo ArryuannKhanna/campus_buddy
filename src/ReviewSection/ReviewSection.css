@@ -15,7 +15,13 @@
 .header {
   text-align: center;
 }
+.header h5{
+  color: #705AF8;
 
+}
+.gray{
+  color:#d8d4d4;
+}
 .review-box {
   
   background-color: #fafafa;
