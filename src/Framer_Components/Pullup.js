@@ -16,7 +16,7 @@ export const Pullup = ({ children }) => {
   const variants = {
     animate: {
     //   opacity:[0,0.1,1.0],
-      y:[40,10,0],
+      y:[90,10,0],
       transition:
       {
         duration:1.5,
@@ -27,7 +27,7 @@ export const Pullup = ({ children }) => {
 
   return (
     <div ref={ref}>
-      <motion.div variants={variants} initial={{opacity:0,y:40}} animate={controls}>
+      <motion.div variants={variants} initial={{y:40}} animate={controls}>
         {children}
       </motion.div>
     </div>

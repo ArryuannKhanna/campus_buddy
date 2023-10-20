@@ -4,19 +4,27 @@ import reviews from './ReviewData.js';
 import reviewpic from './review.jpeg';
 import userpic from './user.png'
 import Fadein from '../Framer_Components/FadeIn';
-<<<<<<< HEAD
-import Pullup from '../Framer_Components/Pullup';
-=======
->>>>>>> 22ea4cf79d282499f1d3d4870e3940aa85378a22
+import Pullup
+ from '../Framer_Components/Pullup';
 export const ReviewSection = () => {
   return (
     <div className='reviewsection'>
+
     <div className='header'>
+    <Pullup>
     <h5>Reviews</h5>
+    </Pullup>
+    <Pullup>
     <h2>Read Real Customer Reviews</h2>
+    </Pullup>
+    <Pullup>
     <h2>Honest Feedback from Satisfied</h2>
+    </Pullup>
+    <Pullup>
     <h2>Users</h2>
+    </Pullup>
     </div>
+   
     <div className="review-grid">
   
     <div className="column col1">
