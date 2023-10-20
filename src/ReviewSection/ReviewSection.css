@@ -17,11 +17,12 @@
 }
 
 .review-box {
+  
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
   padding: 1.25em; /* Converted from 20px to 1.25em */
-  max-width: 22em; /* Use em units */
+  max-width: 30em; /* Use em units */
   margin: 1.25em;
   border-radius: 0.6125em;
   transition: transform 0.4s, background-color 0.2s, box-shadow 0.2s;
@@ -47,16 +48,18 @@
 }
 
 .review-details {
-  margin-top: -0.9375em; /* Use em units */
+  padding: 4%;
+  margin-top: -0.9375em;  
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-/* Ensure text wraps within the review box */
+ 
 .review-details p {
-  margin: 0.625em 0; /* Use em units */
+  margin: 0.625em 0;  
   word-wrap: break-word;
+  color: #393939e3;
 }
 
 .col2 {
@@ -66,12 +69,12 @@
 .author-section {
   display: flex;
   align-items: center;
-  margin-bottom: 0.625em; /* Use em units */
+  margin-bottom: 0.625em;  
 }
 
 .profile-image {
-  width: 3.125em;
-  height: 3.125em;
+  width: 2.125em;
+  height: 2.125em;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 0.625em;
@@ -81,16 +84,18 @@
   margin: 0;
   font-size: 0.96em;
   font-weight: bold;
-  font-style: italic;
+  color: #57575711;
 }
 
 .review-details h3 {
   margin: 0.625em 0;
   font-size: 1.2em;
   font-weight: bold;
+ 
 }
 
 .review-details p {
+  font-weight: 500;
   margin: 0.625em 0;
 }
 
