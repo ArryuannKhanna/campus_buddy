@@ -1,18 +1,14 @@
 import React from 'react'
-import { useEffect,useRef,useState } from 'react'
+import { useEffect,useRef } from 'react'
 import './Featurestile.css'
 import { easeIn, easeOut, useAnimation, useInView } from 'framer-motion';
 import { motion,useScroll,useTransform } from 'framer-motion'
 
 export const Fetaurestile = () => {
-    const [firststate,changefirststate]=useState(false);
-    const [secondstate,changesecondstate]=useState(false);
 
 
     const ref1 = useRef(null);
     const ref2 = useRef(null);
-    const inview = useInView(ref1, {once:false});
-    const inview1 = useInView(ref2, {once:false});
     const controls = useAnimation();
     const controls1 = useAnimation();
 
