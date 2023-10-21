@@ -20,20 +20,18 @@
   background: rgb(255, 255, 255);
   height:100vh;
 }
-.circle
+.circle1,.circle2,.circle3,.circle4
 {
-  z-index: 1;
-  position:absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  top:20%;
-  right: 20%;
-  background-color: #fe62d2;
-  filter:blur(50px);
+  position: absolute;
+  z-index: 0;
+  opacity: 0.6;
 }
+/* .circle1,.circle3
+{
+  position:absolute; 
+} */
 .App-header {
-  background-color: #282c34;
+ 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
