@@ -16,7 +16,7 @@ export const ReviewSection = () => {
     </Pullup>
     <Pullup>
     <h2>Read Real Customer Reviews</h2>
-<<<<<<< HEAD
+
     </Pullup>
     <Pullup>
     <h2>Honest Feedback from Satisfied</h2>
@@ -24,11 +24,10 @@ export const ReviewSection = () => {
     <Pullup>
     <h2>Users</h2>
     </Pullup>
-=======
+    
     <div className='gray'><h2>Honest Feedback from Satisfied</h2>
     <h2>Users</h2></div>
-  
->>>>>>> 41416f22d61b774aca9b35101b88562f0eace183
+
     </div>
    
     <div className="review-grid">
