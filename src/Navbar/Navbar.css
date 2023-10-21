@@ -1,49 +1,51 @@
-.Navbar-cont
-{
-  padding-left:50px;
-  padding-right:50px;
-  background-color: #fff;
-}
-
-.Navbar-flex-cont
-{
-    padding:25px;
-    display:flex;
-    align-content:space-between;
-}
-
-.Navbar-empty-flex
-{
-    flex:1;
-}
-
-.Navbar-logo
-{
-    width: fit-content;
-}
-.Navbar-logo h1
-{
-    margin:0;
+.Navbar-cont {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #fff;
+  }
+  
+  .Navbar-flex-cont {
+    padding: 25px;
+    display: flex;
+    align-content: space-between;
+  }
+  
+  .Navbar-empty-flex {
+    flex: 1;
+  }
+  
+  .Navbar-logo {
+    display: flex; /* Use flex to align image and text side by side */
+    align-items: center; /* Center vertically within the .Navbar-logo div */
+  }
+  
+  .Navbar-logo img {
+    max-width: 100px; /* Adjust the maximum width to your preference */
+    height: 40px;
+    margin-right: -5px; /* Add spacing between the image and the h1 */
+  }
+  
+  .Navbar-logo h1 {
+    margin: 0;
     font-size: 20px;
-}
-
-.Navbar-flex-cont ul
-{
+  }
+  
+  .Navbar-flex-cont ul {
     list-style: none;
-    margin-top:auto;
-    margin-bottom:auto;
-    padding:0;
-    font-size:16px;
-}
-.Navbar-contents
-{
-    display:flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  .Navbar-contents {
+    display: flex;
     text-align: center;
     width: fit-content;
-}
-.Navbar-flex-cont ul li
-{
-    display:inline;
-    padding-right:20px;    
-}
-
+  }
+  
+  .Navbar-flex-cont ul li {
+    display: inline;
+    padding-right: 20px;
+  }
+  
