@@ -10,6 +10,7 @@ function App() {
   return (
     <>
      <div className="landing-background">
+      <div className="circle"></div>
      <Navbar/>
      <Landingpage/>
      <Fetaurestile/>

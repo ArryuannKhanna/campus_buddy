@@ -1,14 +1,16 @@
 import React from 'react'
-import { useEffect,useRef } from 'react'
+import { useEffect,useRef,useState } from 'react'
 import './Featurestile.css'
 import { easeIn, easeOut, useAnimation, useInView } from 'framer-motion';
 import { motion,useScroll,useTransform } from 'framer-motion'
 
 export const Fetaurestile = () => {
-
-
+    const [firststate,changefirststate]=useState(false);
+    const [secondstate,changesecondstate]=useState(false);
     const ref1 = useRef(null);
     const ref2 = useRef(null);
+    const inview = useInView(ref1, {once:false});
+    const inview1 = useInView(ref2, {once:false});
     const controls = useAnimation();
     const controls1 = useAnimation();
 
@@ -57,7 +59,7 @@ export const Fetaurestile = () => {
           }
         },
         start:{
-          opacity:0.6,
+          opacity:0.9,
           y:40,
           transition:
           {
@@ -77,7 +79,7 @@ export const Fetaurestile = () => {
           }
         },
         start:{
-            opacity:0.6,
+            opacity:0.9,
             y:40,
             transition:
             {
@@ -90,7 +92,11 @@ export const Fetaurestile = () => {
   return (
     <motion.div className="featurestile-container">
         <div className="featurestile-preview">
-            <div className="first-preview"><img src={process.env.PUBLIC_URL + '/selling.jpg'} /></div>
+            <div className="first-preview">
+                {/* <h1 style={{fontFamily:'Goblin One, cursive'}}>SELL</h1>
+                <h1 style={{fontFamily:'Goblin One, cursive',color:'#705AF8'}}>/RENT</h1> */}
+                <img src={process.env.PUBLIC_URL + '/selling.jpg'} />
+                </div>
             <motion.div variants={variants} initial={{opacity:0.6,y:40}} animate={controls} className="second-preview"><img src={process.env.PUBLIC_URL + '/buying.jpg'} /></motion.div>
             <motion.div variants={variants1} initial={{opacity:0.6,y:40}} animate={controls1} className="third-preview"><img src={process.env.PUBLIC_URL + '/reviewing.jpg'} /></motion.div>
         </div>

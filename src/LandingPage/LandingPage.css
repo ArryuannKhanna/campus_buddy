@@ -19,7 +19,7 @@ p
     width:fit-content;
     font-size: 50px;
     font-weight:bold;
-    color:#fff;
+    color:#000000;
 }
 .landing-about
 {
@@ -29,8 +29,9 @@ p
     width:390px;
     text-align: center;
     font-size: 24px;
-    color:#ffffff87;
+    color:#3c3c3c87;
     font-weight: medium;
+    z-index: 200;
 }
 
 .landing-buttons
