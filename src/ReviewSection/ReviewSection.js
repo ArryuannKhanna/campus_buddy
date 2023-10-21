@@ -4,8 +4,9 @@ import reviews from './ReviewData.js';
 import reviewpic from './review.jpeg';
 import userpic from './user.png'
 import Fadein from '../Framer_Components/FadeIn';
-import Pullup
- from '../Framer_Components/Pullup';
+import Pullup from '../Framer_Components/Pullup';
+import Messagesframe from '../Framer_Components/Messagesframe';
+
 export const ReviewSection = () => {
   return (
     <div className='reviewsection'>
@@ -24,9 +25,9 @@ export const ReviewSection = () => {
     <Pullup>
     <h2>Users</h2>
     </Pullup>
-    
+{/*     
     <div className='gray'><h2>Honest Feedback from Satisfied</h2>
-    <h2>Users</h2></div>
+    <h2>Users</h2></div> */}
 
     </div>
    
@@ -110,6 +111,7 @@ export const ReviewSection = () => {
         ))}
       </div>
     </div>
+
     </div>
   );
 };

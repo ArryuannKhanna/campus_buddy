@@ -7,7 +7,7 @@
   .Navbar-flex-cont {
     padding: 25px;
     display: flex;
-    align-content: space-between;
+    align-content: center;
   }
   
   .Navbar-empty-flex {
@@ -39,13 +39,28 @@
   }
   
   .Navbar-contents {
+    position: relative;
+    padding: 0.6em;
+    border-radius: 1.2em;
     display: flex;
     text-align: center;
     width: fit-content;
+    z-index: 100;
   }
   
   .Navbar-flex-cont ul li {
     display: inline;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
+  .login-register
+  {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding:10px;
+    border-radius: 0.6em;
+    border: 1px black solid;
+    background-color:#fff;
+    color: #000;
+  }

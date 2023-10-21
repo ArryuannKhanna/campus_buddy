@@ -10,7 +10,7 @@ export const Messagesframe = ({children}) => {
     const controls = useAnimation();
     const{scrollYProgress:sc}=useScroll({
         target:ref1,
-        offset:["1.33 1","0 1"]
+        offset:["1.9 1","0 1"]
     })
     useEffect(() => {
         console.log("this is sc->",sc.current);

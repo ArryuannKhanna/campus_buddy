@@ -6,7 +6,7 @@ import Fadein2 from '../Framer_Components/FadeIn2'
 export const LandingPage = () => {
   return (
     <div className="landingpage">
-      <Fadein para={2.0}>
+      <Fadein>
        <div className="landing-heading">
         <p>Buy and Sell the useful goods</p>
        </div>
