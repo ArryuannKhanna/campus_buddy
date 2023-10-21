@@ -14,11 +14,24 @@
 }
 .landing-background
 {
-  background: rgb(147,170,189);
+  position:relative;
+  /* background: rgb(147,170,189); */
   background: radial-gradient(circle, rgba(147,170,189,1) 0%, rgba(83,103,121,1) 36%, rgba(83,103,121,1) 36%, rgba(0,18,45,1) 100%);
+  background: rgb(255, 255, 255);
   height:100vh;
 }
-
+.circle
+{
+  z-index: 1;
+  position:absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  top:20%;
+  right: 20%;
+  background-color: #fe62d2;
+  filter:blur(50px);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
