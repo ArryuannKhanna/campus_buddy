@@ -63,4 +63,5 @@
     border: 1px black solid;
     background-color:#fff;
     color: #000;
+    z-index: 100;
   }

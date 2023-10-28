@@ -6,7 +6,7 @@ import { faqs } from './faqData';
 
 function Faq() {
   return (
-    <div className="App">
+    <div className="App" id="faq">
       <h1>FAQ Chat</h1>
       <Chat faqs={faqs} />
     </div>
