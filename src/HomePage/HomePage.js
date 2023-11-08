@@ -5,6 +5,7 @@ import Landingpage from "../LandingPage/Landingpage";
 import Fetaurestile from "../Featurestile/Fetaurestile";
 import Faq from "../FAQs/Faq";
 import ReviewSection from '../ReviewSection/ReviewSection';
+import FounderReviewsCarousel from '../FoundersReviews/FoundersReviews';
 function HomePage() {
   return (
     <div className="landing-background">
@@ -188,7 +189,8 @@ function HomePage() {
         <Fetaurestile />
         <Faq />
         <ReviewSection />
-      
+        <FounderReviewsCarousel/>
+        
     </div>
   );
 }

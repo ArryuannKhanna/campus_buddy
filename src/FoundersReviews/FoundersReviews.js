@@ -19,6 +19,16 @@ const FounderReviewsCarousel = () => {
       review: 'Praesent tincidunt quam eget neque congue, in tincidunt urna placerat.',
     },
     // Add more reviews as needed
+    {
+      name: 'John Doe',
+      position: 'Founder & CEO',
+      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    },
+    {
+      name: 'Janne Smith',
+      position: 'Co-Founder',
+      review: 'Praesent tincidunt quam eget neque congue, in tincidunt urna placerat.',
+    },
   ];
 
   const settings = {
