@@ -3,6 +3,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Fadein from '../Framer_Components/FadeIn';
+import Pullup from '../Framer_Components/Pullup';
 
 const FounderReviewsCarousel = ({ founderReviews }) => {
   const settings = {
@@ -14,6 +16,8 @@ const FounderReviewsCarousel = ({ founderReviews }) => {
   };
 
   return (
+    <Fadein>
+      <Pullup>
     <div className="founder-reviews-carousel" style={{ width: '80%', margin: '0 auto 20px' }}>
       <Slider {...settings}>
         {founderReviews.map((review, index) => (
@@ -25,6 +29,8 @@ const FounderReviewsCarousel = ({ founderReviews }) => {
         ))}
       </Slider>
     </div>
+    </Pullup>
+    </Fadein>
   );
 };
 

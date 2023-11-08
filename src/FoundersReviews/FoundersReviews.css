@@ -1,17 +1,31 @@
+/* FoundersReviews.css */
+
+/* Style for the carousel container */
 .founder-reviews-carousel {
   width: 80%;
-  margin: 20px auto 0; /* Added margin-top to separate it from other segments */
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  opacity: ; /* Initial opacity set to 0 */
+  transform: translateY(20px); /* Initial position slightly below the viewport */
+  transition: opacity 1s, transform 1s; /* Add a transition for smooth animation */
 }
 
+/* Style for individual review items */
 .founder-review {
   padding: 20px;
   text-align: center;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f8f8f8;
-  margin-right: 20px; /* Add margin to create space between carousels */
+  margin-right: 20px;
 }
 
+/* Add margin to separate carousels (between founder 1 and founder 2) */
+.founder-reviews-carousel + .founder-reviews-carousel {
+  margin-top: 20px;
+}
+
+/* Style for the slick-dots (pagination) */
 .slick-dots li button:before {
   color: #007bff;
 }
