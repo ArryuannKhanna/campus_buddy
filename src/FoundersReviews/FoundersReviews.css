@@ -1,0 +1,17 @@
+.founder-reviews-carousel {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .founder-review {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  .slick-dots li button:before {
+    color: #007bff;
+  }
+  
