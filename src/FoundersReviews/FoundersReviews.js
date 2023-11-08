@@ -22,6 +22,9 @@ const FounderReviewsCarousel = ({ founderReviews }) => {
       <Slider {...settings}>
         {founderReviews.map((review, index) => (
           <div key={index} className="founder-review">
+            <div className="profile-photo">
+            <img src={review.photoUrl} alt={review.name} className="profile-photo" />
+            </div>
             <h3>{review.name}</h3>
             <p>{review.position}</p>
             <p>{review.review}</p>
@@ -37,6 +40,7 @@ const FounderReviewsCarousel = ({ founderReviews }) => {
 const App = () => {
   const firstandsecondFounderReviews = [
     {
+      photoUrl: 'https://images.app.goo.gl/i32rtYnzcBf4hw3r8',
       name: 'John Doe',
       position: 'Founder & CEO',
       review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
