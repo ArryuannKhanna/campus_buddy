@@ -1,10 +1,11 @@
-import './FoundersReviews.css'
+import './FoundersReviews.css';
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Fadein from '../Framer_Components/FadeIn';
 import Pullup from '../Framer_Components/Pullup';
+import userpic from './user.png'
 
 const FounderReviewsCarousel = ({ founderReviews }) => {
   const settings = {
@@ -18,21 +19,21 @@ const FounderReviewsCarousel = ({ founderReviews }) => {
   return (
     <Fadein>
       <Pullup>
-    <div className="founder-reviews-carousel" style={{ width: '80%', margin: '0 auto 20px' }}>
-      <Slider {...settings}>
-        {founderReviews.map((review, index) => (
-          <div key={index} className="founder-review">
-            <div className="profile-photo">
-            <img src={review.photoUrl} alt={review.name} className="profile-photo" />
-            </div>
-            <h3>{review.name}</h3>
-            <p>{review.position}</p>
-            <p>{review.review}</p>
-          </div>
-        ))}
-      </Slider>
-    </div>
-    </Pullup>
+        <div className="founder-reviews-carousel" style={{ width: '80%', margin: '0 auto 20px' }}>
+          <Slider {...settings}>
+            {founderReviews.map((review, index) => (
+              <div key={index} className="founder-review">
+                <div className="profile-photo">
+                <img className="profile-image" src={userpic} alt={review.name} />
+                </div>
+                <h3>{review.name}</h3>
+                <p>{review.position}</p>
+                <p>{review.review}</p>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </Pullup>
     </Fadein>
   );
 };
@@ -40,7 +41,7 @@ const FounderReviewsCarousel = ({ founderReviews }) => {
 const App = () => {
   const firstandsecondFounderReviews = [
     {
-      photoUrl: 'https://images.app.goo.gl/i32rtYnzcBf4hw3r8',
+       // Add the URL to the profile photo
       name: 'John Doe',
       position: 'Founder & CEO',
       review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
