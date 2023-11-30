@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Link} from 'react-router-dom'
 import './Navbar.css'
 import logoImage from './finalLogo.png';
 
@@ -24,12 +25,14 @@ export const Navbar = () => {
         <div className="Navbar-contents">
           <ul>
           {/* style={state1 ? { border: '1px black solid',borderRadius:'1.2em',padding:'20px' } : {}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} */}
-            <li><a href="">Buy/Sell</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a>Buy</a></li>
+            <li>Sell</li>
+            <li>Rent</li>
+            <li>FAQ</li>
+            <li>About Us</li>
           </ul>
         </div>
-        <div className="login-register">Login/SignIn</div>
+       <div className="login-register"> <Link to="/login">Login/Register</Link></div>
       </div>
     </div>
   )

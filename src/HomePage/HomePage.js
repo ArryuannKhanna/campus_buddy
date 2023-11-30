@@ -1,18 +1,14 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage/HomePage";
-import Navbar from "./Navbar/Navbar";
-<<<<<<< HEAD
-import Landingpage from "./LandingPage/Landingpage";
-import Fetaurestile from "./Featurestile/Fetaurestile";
-import Faq from "./FAQs/Faq";
-import Footer from "./Footer/Footer";
 
-import ReviewSection from "./ReviewSection/ReviewSection";
-function App() {
+import React from 'react';
+import Navbar from "../Navbar/Navbar";
+import Landingpage from "../LandingPage/Landingpage";
+import Fetaurestile from "../Featurestile/Fetaurestile";
+import Faq from "../FAQs/Faq";
+import ReviewSection from '../ReviewSection/ReviewSection';
+import FounderReviewsCarousel from '../FoundersReviews/FoundersReviews';
+function HomePage() {
   return (
-    <>
-      <div className="landing-background">
+    <div className="landing-background">
         <div className="circle4">
           <svg
             width="1400"
@@ -187,28 +183,16 @@ function App() {
               </clipPath>{" "}
             </defs>{" "}
           </svg>
-        </div>
-
+          </div>
         <Navbar />
         <Landingpage />
         <Fetaurestile />
-        <ReviewSection />
         <Faq />
-        <Footer />
-      </div>
-    </>
-=======
-import LogIn from "./login/login";
-function App() {
-  return (
-    
-    <Router>
-    <Routes>
-       <Route path="/" element={<HomePage></HomePage>}></Route>
-       <Route path="/login" element={<LogIn/>}></Route>
-      </Routes>
-    </Router>
->>>>>>> 7e7d8204b34f71be76a9bd53a690a963ae8cc562
+        <ReviewSection />
+        <FounderReviewsCarousel/>
+        
+    </div>
   );
 }
-export default App;
+
+export default HomePage;

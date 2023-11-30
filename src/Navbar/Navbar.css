@@ -63,9 +63,13 @@
     border: 1px black solid;
     background-color:#fff;
     color: #000;
+<<<<<<< HEAD
   }
   a
   {
     text-decoration: none;
     color: inherit;
+=======
+    z-index: 100;
+>>>>>>> 7e7d8204b34f71be76a9bd53a690a963ae8cc562
   }
