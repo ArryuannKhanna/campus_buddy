@@ -5691,6 +5691,11 @@ human-signals@^2.1.0:
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
+icons@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/icons/-/icons-1.0.0.tgz"
+  integrity sha512-7POum3AHKovjEEXg4ITL2opTzGjnN2UnUIhv5LsUX+SjKBsFMjRyANShrCubt0KQdNdcX2wAym+JXOt6LceuYA==
+
 iconv-lite@^0.6.2:
   version "0.6.3"
   dependencies:

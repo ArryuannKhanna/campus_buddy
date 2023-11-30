@@ -65,7 +65,7 @@ const App = () => {
       position: 'Lead Developer',
       review: 'Suspendisse potenti. Nulla facilisi.',
     },
-    // Add more reviews as needed
+    //dd more reviews as needed
   ];
 
   return (
