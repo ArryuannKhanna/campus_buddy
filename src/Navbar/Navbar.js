@@ -4,14 +4,6 @@ import './Navbar.css'
 import logoImage from './finalLogo.png';
 
 export const Navbar = () => {
-  const[state1,setState1]=useState(true);
-  const handleMouseEnter = () => {
-    setState1(true);
-  };
-
-  const handleMouseLeave = () => {
-    setState1(false);
-  };
   return (
     <div className="Navbar-cont">
       <div className="Navbar-flex-cont">
@@ -24,11 +16,10 @@ export const Navbar = () => {
         </div>
         <div className="Navbar-contents">
           <ul>
-          {/* style={state1 ? { border: '1px black solid',borderRadius:'1.2em',padding:'20px' } : {}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} */}
-            <a href="http://localhost:3000/"><li>Buy</li></a>
+            <li><a>Buy</a></li>
             <li>Sell</li>
             <li>Rent</li>
-            <li><a href='#faq'>FAQ</a></li>
+            <li>FAQ</li
             <li>About Us</li>
           </ul>
         </div>

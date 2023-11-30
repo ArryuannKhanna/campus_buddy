@@ -16,10 +16,6 @@ export const LandingPage = () => {
        ThaparBuddy is a devoted platform created to promote simple and effective purchase and exchange of old books and multiple other items within the college community.
        </div>
        </Fadein2>
-       <div className="landing-buttons">
-        <div className="landing-button1"></div>
-        <div className="landing-button2"></div>
-       </div>
 
     </div>
   )

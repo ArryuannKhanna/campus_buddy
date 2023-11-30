@@ -1,0 +1,19 @@
+.Footer
+{
+    height:100px;
+    width: 100%;
+    background-color:#f0f0f0;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    box-shadow: 5px 0px 5px grey;
+    justify-content: space-around;
+}
+.icosn:hover
+{
+    cursor:pointer;
+}
