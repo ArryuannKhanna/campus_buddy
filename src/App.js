@@ -4,6 +4,7 @@ import Navbar from "./Navbar/Navbar";
 import Landingpage from "./LandingPage/Landingpage";
 import Fetaurestile from "./Featurestile/Fetaurestile";
 import Faq from "./FAQs/Faq";
+import Footer from "./Footer/Footer";
 
 import ReviewSection from "./ReviewSection/ReviewSection";
 function App() {
@@ -189,8 +190,9 @@ function App() {
         <Navbar />
         <Landingpage />
         <Fetaurestile />
-        <Faq />
         <ReviewSection />
+        <Faq />
+        <Footer />
       </div>
     </>
   );

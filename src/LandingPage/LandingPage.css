@@ -22,6 +22,7 @@ p
     font-weight:bold;
     z-index: 100;
     color:#000000;
+    overflow-y: hidden;
 }
 .landing-about
 {
@@ -52,10 +53,11 @@ p
 }
 .landing-button1
 {
-    background-color: rgba(220, 156, 220, 0.922);
+    border:1px dotted;
     margin-right:20px;
 }
 .landing-button2
 {
-    background-color:#77a7ff;
+    border:1px dotted;
+    /* background-color:#77a7ff; */
 }

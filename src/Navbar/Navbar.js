@@ -24,11 +24,9 @@ export const Navbar = () => {
         <div className="Navbar-contents">
           <ul>
           {/* style={state1 ? { border: '1px black solid',borderRadius:'1.2em',padding:'20px' } : {}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} */}
-            <li><a>Buy</a></li>
-            <li>Sell</li>
-            <li>Rent</li>
-            <li>FAQ</li>
-            <li>About Us</li>
+            <li><a href="">Buy/Sell</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">FAQ</a></li>
           </ul>
         </div>
         <div className="login-register">Login/SignIn</div>
